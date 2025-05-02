@@ -1,1 +1,205 @@
-ADX Indicator Lakshmi Pasupuleti
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio Contribution – ADX & CrewAI Trading Agent</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 900px; margin: 2rem auto; padding: 0 1rem; color: #333; }
+    h1, h2, h3 { color: #222; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+    th, td { border: 1px solid #ccc; padding: .5rem; text-align: left; }
+    th { background: #f4f4f4; }
+    ul { margin: 0.5rem 0 1rem 1.5rem; }
+    a { color: #0066cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .screenshot { display: block; max-width: 100%; margin: 1rem 0; border: 1px solid #ddd; }
+    details { margin: 1rem 0; }
+    summary { font-weight: bold; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+  <h1>ADX & CrewAI Trading Agent</h1>
+
+  <p>
+    <strong>Issue:</strong><br>
+    ADX: As a trader, I want to utilize the Average Directional Index (ADX) integrated with CrewAI agents to identify and analyze the strength of market trends, so that I can receive informed investment decisions and make strategic trading choices.
+  </p>
+ <p>
+    This project delivers a Streamlit application that calculates the Average Directional Index (ADX) for user-specified stocks, fetches both historical and real-time price data, and integrates CrewAI agents to generate actionable BUY, SELL, or HOLD signals based on the latest ADX readings. My contributions include architecting and implementing the ADX calculation module, designing the Streamlit user interface, wiring data-fetching pipelines, developing and tuning the CrewAI decision agent, and building a backtesting engine to validate strategy performance.
+  </p>
+  <p>
+    This project implements a Streamlit-based application that:
+    <ul>
+      <li>Fetches historical and real-time stock data;</li>
+      <li>Calculates the Average Directional Index (ADX) with user-defined parameters;</li>
+      <li>Leverages CrewAI agents to generate precise BUY, SELL, or HOLD signals based on the latest ADX;</li>
+      <li>Provides a backtesting framework to evaluate ADX-driven strategies.</li>
+    </ul>
+    <strong>My contributions:</strong> architected and implemented the ADX calculation module, designed the Streamlit UI, integrated data feeds, created and tuned the CrewAI decision agent, and built the backtesting engine.
+  </p>
+
+  <h2>Sprint Objectives</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Sprint</th>
+        <th>Objective</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Setup project scaffold & ADX calculation MVP</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Integrate historical & intraday data; refine UI</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Develop CrewAI agent for ADX-based investment advice</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Build and validate backtesting framework for ADX strategy</td>
+      </tr>
+    </tbody>
+  </table>
+
+ <h2>User Stories & Tasks</h2>
+  <p>Below is a concise summary of each key user story, with the tasks completed and a brief description of what was delivered.</p>
+  <ul>
+    <li>
+      <strong>ADX Integration</strong><br>
+      Developed the core ADX calculation logic, allowing users to customize the period and smoothing method. This ensures accurate measurement of trend strength and forms the foundation for trading signals.
+    </li>
+    <li>
+      <strong>Data Fetching</strong><br>
+      Implemented robust pipelines for historical (1 year, 6 months, 3 months, 1 month) and intraday (1 minute) data using yfinance and yahooquery, including error handling and user feedback.
+    </li>
+    <li>
+      <strong>Streamlit UI</strong><br>
+      Designed and coded the interactive interface: ticker input, data-type selector, parameter controls, and dynamic tables displaying the latest fetched and computed datasets.
+    </li>
+    <li>
+      <strong>CrewAI Agent</strong><br>
+      Engineered the prompt structure and task definitions so the CrewAI agent returns a precise one-word decision (BUY, SELL, or HOLD) based on the most recent ADX value and current price.
+    </li>
+    <li>
+      <strong>Backtester</strong><br>
+      Built a backtesting module that runs the ADX-signal strategy over historical data, computes performance metrics (Sharpe ratio, max drawdown), and outputs summary statistics for validation.
+    </li>
+  </ul>
+
+  <h2>Key Contributions</h2>
+  <h3>Output 1</h3>
+  <img src="screenshots/1.jpg">
+  <h3>Output 2</h3>
+  <img src="screenshots/2.jpg">
+    <h3>Output 3</h3>
+  <img src="screenshots/3.jpg">
+    <h3>Output 4</h3>
+  <img src="screenshots/4.jpg">
+    <h3>Output 5</h3>
+  <img src="screenshots/5.jpg">
+    <h3>Output 6</h3>
+  <img src="screenshots/6.jpg">
+    <h3>Output 7</h3>
+  <img src="screenshots/7.jpg">
+
+  <p>
+    <strong>Repository:</strong>
+    <a href="https://github.com/lakshmip98/Pasupuleti-AI-Agent-Stock-Prediction" target="_blank">
+      github.com/lakshmip98/Pasupuleti-AI-Agent-Stock-Prediction
+    </a>
+  </p>
+  <h2>Commit History</h2>
+  <details>
+    <summary>View all commits</summary>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Commit</th>
+          <th>Description</th>
+          <th>User Story</th>
+          <th>Task</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>02/01/2025</td>
+          <td>91b0f4268472bfd3c675559dfc5aafcf66fa963d</td>
+          <td>Adding ADX indicator main and indicator files</td>
+          <td>ADX</td>
+          <td>ADX.1</td>
+        </tr>
+        <tr>
+          <td>02/08/2025</td>
+          <td>8c0be5809f378a4ed3014a07e676ff77740092d4</td>
+          <td>Adding ADX Customization</td>
+          <td>ADX</td>
+          <td>ADX.6</td>
+        </tr>
+        <tr>
+          <td>02/15/2025</td>
+          <td>f66df67a23d6b700bf4eb1ee77e59a270d4f3061</td>
+          <td>Update adx indicator and main file with real time and historic data</td>
+          <td>ADX</td>
+          <td>ADX.6</td>
+        </tr>
+        <tr>
+          <td>03/11/2025</td>
+          <td>dc6d58284af7a77050a99b6644a101800d490c04</td>
+          <td>ADX Crew AI agent code added</td>
+          <td>ADX</td>
+          <td>ADX.8</td>
+        </tr>
+        <tr>
+          <td>04/11/2025</td>
+          <td>dc6959bbe0361d24ce2f47cbdb219c4771bfa92b</td>
+          <td>backtest</td>
+          <td>ADX</td>
+          <td>ADX.11</td>
+        </tr>
+        <tr>
+          <td>04/12/2025</td>
+          <td>7ddeacc994ac8617219c7a26c8df0826d5195604</td>
+          <td>Backtest ADX Indicator</td>
+          <td>ADX</td>
+          <td>ADX.11</td>
+        </tr>
+        <tr>
+          <td>04/12/2025</td>
+          <td>19154963d68621ee84b58c1aa45d80933474db2d</td>
+          <td>Update ADX backtest code</td>
+          <td>ADX</td>
+          <td>ADX.11</td>
+        </tr>
+        <tr>
+          <td>04/23/2025</td>
+          <td>db213b69b8e3b36e17c3424237f0aea7e362db0e</td>
+          <td>Add comments to the code</td>
+          <td>ADX</td>
+          <td>ADX.11</td>
+        </tr>
+      </tbody>
+    </table>
+  </details>
+
+    <details>
+    <h2>Appendix</h2>
+    <summary>Task Hours Documents</summary>
+    <ul>
+      <li><a href="Pasupuleti Sprint 1 Task Hours Achieved.docx" download>Pasupuleti Sprint 1 Task Hours Achieved.docx</a></li>
+      <li><a href="Pasupuleti Sprint 2 Task Hours Achieved.docx" download>Pasupuleti Sprint 2 Task Hours Achieved.docx</a></li>
+      <li><a href="Pasupuleti Sprint 3 Task Hours Achieved.docx" download>Pasupuleti Sprint 3 Task Hours Achieved.docx</a></li>
+      <li><a href="Pasupuleti Sprint 4 Task Hours Achieved.docx" download>Pasupuleti Sprint 4 Task Hours Achieved.docx</a></li>
+    </ul>
+  </details>
+
+
+</body>
+</html>
